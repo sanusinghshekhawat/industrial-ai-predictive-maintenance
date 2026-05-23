@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dataset files
+data/*.csv
+data/*.zip
+
+# Model artifacts
+models/*.pkl
+models/*.joblib
+
+# MacOS
+.DS_Store
+
+# Jupyter exports
+*.html
+
+# Streamlit cache
+.streamlit/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
