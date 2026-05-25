@@ -1,56 +1,126 @@
 # Industrial AI Predictive Maintenance System
 
-AI-powered predictive maintenance system for industrial equipment using machine learning and industrial sensor analytics.
+AI-powered predictive maintenance framework for industrial equipment using machine learning and industrial sensor analytics.
 
 ---
 
-## Project Objective
+## Overview
 
-Develop a predictive maintenance framework capable of identifying machine failure risks using operational sensor data and engineered industrial indicators.
+This project develops a predictive maintenance system capable of identifying machine failure risks from operational sensor data.
 
-The project focuses on:
-- Machine failure prediction
-- Industrial sensor analysis
-- Operational risk monitoring
-- Maintenance intelligence
-- Physics-informed feature engineering
+The system combines:
+- industrial exploratory analysis
+- physics-informed feature engineering
+- machine learning classification
+- operational risk evaluation
+
+to simulate predictive maintenance workflows commonly used in modern manufacturing and Industry 4.0 environments.
+
+---
+
+## Problem Statement
+
+Unexpected equipment failures in industrial environments can lead to:
+- production downtime
+- maintenance cost escalation
+- operational inefficiencies
+- safety risks
+
+The objective of this project is to proactively identify machine failure conditions using historical operational sensor data and machine learning models.
 
 ---
 
 ## Dataset
 
-AI4I 2020 Predictive Maintenance Dataset  
+### AI4I 2020 Predictive Maintenance Dataset
 Source: UCI Machine Learning Repository
 
-The dataset contains industrial operating parameters including:
+The dataset contains 10,000 industrial operating records with:
 - Air temperature
 - Process temperature
 - Rotational speed
 - Torque
 - Tool wear
-- Failure modes
+- Product quality categories
+- Failure indicators
+
+Failure conditions include:
+- Tool Wear Failure (TWF)
+- Heat Dissipation Failure (HDF)
+- Power Failure (PWF)
+- Overstrain Failure (OSF)
+- Random Failure (RNF)
 
 ---
 
-## Exploratory Data Analysis Highlights
+## Exploratory Data Analysis
 
-Key findings from EDA:
+The exploratory analysis focused on understanding operational conditions associated with machine failures.
+
+### Key Insights
 - Higher tool wear strongly correlates with machine failures
-- Failures commonly occur under high torque and low RPM conditions
-- Engineered features such as temperature difference and estimated power provide better operational insights than raw variables
-- Failure behavior appears interaction-driven rather than dependent on a single variable
+- Failure regions commonly occur under high torque and low RPM operating conditions
+- Machine failures exhibit nonlinear and interaction-driven behavior
+- Engineered operational indicators provide stronger separation than raw sensor variables
+- The dataset contains strong class imbalance, making recall-focused evaluation important
 
 ---
 
 ## Feature Engineering
 
-Created industrially meaningful features:
+Physics-informed operational indicators were engineered to better represent industrial machine behavior.
+
+### Engineered Features
 - Temperature Difference
+
+```math
+\Delta T = T_{process} - T_{air}
+```
+
 - Estimated Mechanical Power
 
-These features improve representation of:
-- Thermal efficiency
-- Mechanical load conditions
+```math
+P = \tau \cdot \frac{2\pi n}{60}
+```
+
+These engineered features improve representation of:
+- thermal efficiency
+- mechanical loading
+- operational stress conditions
+
+---
+
+## Machine Learning Workflow
+
+### Preprocessing
+- Ordinal encoding for product quality categories
+- Train-test split with stratification
+- Feature scaling for linear models
+- Multicollinearity analysis
+
+### Models Implemented
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+
+### Evaluation Metrics
+Due to class imbalance, model evaluation focuses on:
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+
+Special emphasis is placed on recall because missed machine failures are operationally costly in predictive maintenance systems.
+
+---
+
+## Current Findings
+
+Initial baseline modeling indicates:
+- Tree-based models outperform linear models on industrial failure prediction tasks
+- Random Forest provides stronger nonlinear failure detection capability
+- Engineered features improve operational interpretability
+- Failure prediction benefits significantly from interaction-aware modeling
 
 ---
 
@@ -59,13 +129,14 @@ These features improve representation of:
 - Python
 - Pandas
 - NumPy
-- Seaborn
 - Matplotlib
+- Seaborn
 - Scikit-learn
+- Jupyter Notebook
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
 industrial-ai-predictive-maintenance/
@@ -85,11 +156,31 @@ industrial-ai-predictive-maintenance/
 
 ---
 
-## Project Status
+## Project Workflow
 
-### Day 1 Completed
-- Dataset understanding
-- Industrial EDA
-- Failure analysis
-- Feature engineering
-- Modeling preparation
+1. Industrial Data Understanding
+2. Exploratory Data Analysis
+3. Feature Engineering
+4. Preprocessing & Scaling
+5. Baseline Machine Learning Models
+6. Performance Evaluation
+7. Predictive Maintenance Insights
+
+---
+
+## Future Improvements
+
+Planned extensions include:
+- Hyperparameter tuning
+- XGBoost implementation
+- SMOTE-based imbalance handling
+- Power BI industrial dashboard
+- Maintenance recommendation engine
+- Streamlit deployment
+- Real-time monitoring simulation
+
+---
+
+## Author
+
+Sahil Singh Shekhawat
