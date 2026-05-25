@@ -1,0 +1,9 @@
+Feature,Importance
+estimated_power,0.24066762249402354
+Rotational speed [rpm],0.19064981608883136
+Torque [Nm],0.17221028329917065
+temp_diff,0.16548635167981732
+Tool wear [min],0.13617258630810627
+Air temperature [K],0.04766997218382272
+Process temperature [K],0.03389554836887714
+Type,0.013247819577351092
