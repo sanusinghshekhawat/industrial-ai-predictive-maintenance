@@ -1,0 +1,184 @@
+
+==========================================================================================
+               INDUSTRIAL AI PREDICTIVE MAINTENANCE DASHBOARD
+                         FULL SCREEN 16:9 POWER BI LAYOUT
+==========================================================================================
+
+Recommended Canvas:
+------------------------------------------------------------------------------------------
+Width  : 1920 px
+Height : 1080 px
+Theme  : Dark Industrial Monitoring Console
+------------------------------------------------------------------------------------------
+
+FULL SCREEN DASHBOARD STRUCTURE
+==========================================================================================
+
+ --------------------------------------------------------------------------------------------------------------
+| INDUSTRIAL AI PREDICTIVE MAINTENANCE MONITORING SYSTEM                                   Plant Status: LIVE |
+| AI-Assisted Operational Risk Monitoring                                                   Last Refresh: NOW |
+ --------------------------------------------------------------------------------------------------------------
+
+
+ ==============================================================================================================
+| TOTAL     | FAILURE     | HIGH RISK   | ACTIVE      | AVG TOOL    | AVG POWER   | AVG TORQUE | AVG RPM     |
+| MACHINES  | RATE        | MACHINES    | ALERTS      | WEAR         | OUTPUT       | LOAD        |             |
+|------------|-------------|--------------|--------------|---------------|---------------|--------------|-------------|
+|   2500     |    3.4%     |      85      |      27      |    108 min    |    12.4 kW    |    41 Nm     |    1450     |
+ ==============================================================================================================
+
+
+ ==============================================================================================================
+|                                                                                                              |
+|   FAILURE DISTRIBUTION                     FAILURE BY RISK CATEGORY                                           |
+|                                                                                                              |
+|   Healthy vs Failure Machines              Low Risk / Medium Risk / High Risk                               |
+|                                                                                                              |
+|   [DONUT CHART]                            [STACKED BAR CHART]                                               |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   FAILURE BY PRODUCT TYPE                  FAILURE PROBABILITY DISTRIBUTION                                  |
+|                                                                                                              |
+|   Type L / Type M / Type H                Probability Spread Across Machines                                |
+|                                                                                                              |
+|   [BAR CHART]                              [HISTOGRAM]                                                       |
+|                                                                                                              |
+ ==============================================================================================================
+
+
+ ==============================================================================================================
+|                                                                                                              |
+|                                   OPERATIONAL MONITORING ZONE                                                |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   TORQUE vs RPM SCATTER PLOT                                                                                 |
+|                                                                                                              |
+|   X-axis : Rotational Speed (RPM)                                                                            |
+|   Y-axis : Torque                                                                                            |
+|   Color  : Failure Probability                                                                               |
+|                                                                                                              |
+|   Purpose: Identify dangerous operational zones                                                              |
+|                                                                                                              |
+|                                              [LARGE SCATTER PLOT]                                            |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   TOOL WEAR ANALYSIS              ESTIMATED POWER ANALYSIS              TEMPERATURE DIFFERENCE ANALYSIS      |
+|                                                                                                              |
+|   [HISTOGRAM]                    [BOX/DENSITY PLOT]                   [DISTRIBUTION CHART]                 |
+|                                                                                                              |
+ ==============================================================================================================
+
+
+ ==============================================================================================================
+|                                                                                                              |
+|                                   AI RISK MONITORING & ALERT SYSTEM                                          |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   HIGH RISK MACHINE TABLE                                                                                    |
+|                                                                                                              |
+|   Machine ID | Failure Probability | Risk Category | Torque | RPM | Tool Wear                              |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   FAILURE RISK GAUGE                                                                                         |
+|                                                                                                              |
+|                         GREEN -------- YELLOW -------- RED                                                    |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   MAINTENANCE ALERT PANEL                                                                                    |
+|                                                                                                              |
+|   Critical Machines         : 12                                                                             |
+|   Thermal Risk Alerts       : 7                                                                              |
+|   Mechanical Stress Alerts  : 9                                                                              |
+|   Immediate Inspection Req. : 4                                                                              |
+|                                                                                                              |
+ ==============================================================================================================
+
+
+ ==============================================================================================================
+|                                                                                                              |
+|                                        OPERATIONAL TREND MONITORING                                          |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   FAILURE PROBABILITY TREND                         SENSOR TREND ANALYSIS                                     |
+|                                                                                                              |
+|   [LINE CHART]                                     RPM / Torque / Temp Trends                               |
+|                                                                                                              |
+|--------------------------------------------------------------------------------------------------------------|
+|                                                                                                              |
+|   RISK CATEGORY TREND                                MAINTENANCE PRIORITY TREND                              |
+|                                                                                                              |
+|   [AREA CHART]                                       [LINE/BAR CHART]                                       |
+|                                                                                                              |
+ ==============================================================================================================
+
+
+ ==============================================================================================================
+| FILTER PANEL                                                                                                 |
+|--------------------------------------------------------------------------------------------------------------|
+| Product Type | Risk Category | Failure Status | RPM Range | Torque Range | Tool Wear Range                  |
+ ==============================================================================================================
+
+
+COLOR THEME RECOMMENDATION
+==========================================================================================
+
+Background          : Dark Gray / Charcoal
+KPI Cards           : Dark Blue / Slate
+High Risk           : Red
+Medium Risk         : Orange
+Low Risk            : Green
+Accent Highlights   : Cyan / Electric Blue
+Text                : White / Light Gray
+
+==========================================================================================
+DASHBOARD PURPOSE
+==========================================================================================
+
+This dashboard simulates an industrial predictive maintenance monitoring system used by:
+- maintenance engineers
+- plant operators
+- reliability teams
+- operations managers
+
+The objective is to:
+- monitor machine health
+- detect operational stress
+- identify high-risk equipment
+- prioritize maintenance activities
+- reduce unexpected equipment failures
+
+==========================================================================================
+DESIGN PHILOSOPHY
+==========================================================================================
+
+The dashboard should feel like:
+- industrial operations center
+- AI-assisted monitoring console
+- manufacturing control room
+
+Focus on:
+- operational insights
+- maintenance actions
+- machine health monitoring
+
+Avoid:
+- excessive ML jargon
+- cluttered visuals
+- too many charts
+- technical sklearn details
+
+==========================================================================================
+FINAL USER EXPERIENCE GOAL
+==========================================================================================
+
+A stakeholder opening the dashboard should immediately feel:
+
+"This system can proactively identify risky industrial equipment and support
+data-driven maintenance decisions before unexpected failures occur."
