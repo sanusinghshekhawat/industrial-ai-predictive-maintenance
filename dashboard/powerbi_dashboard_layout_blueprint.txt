@@ -1,0 +1,220 @@
+
+INDUSTRIAL AI PREDICTIVE MAINTENANCE DASHBOARD
+16:9 POWER BI LAYOUT BLUEPRINT
+============================================================
+
+Canvas Size Recommendation:
+- 16:9 Layout
+- 1920 x 1080
+- Dark Industrial Theme
+
+============================================================
+TOP HEADER SECTION
+============================================================
+
+ ----------------------------------------------------------
+| INDUSTRIAL AI PREDICTIVE MAINTENANCE MONITORING SYSTEM  |
+| Plant Status: ACTIVE             Last Refresh: LIVE      |
+ ----------------------------------------------------------
+
+Header Notes:
+- Dark charcoal background
+- White title text
+- Accent colors:
+    - Cyan for KPIs
+    - Orange for warnings
+    - Red for critical alerts
+
+============================================================
+TOP KPI ROW
+============================================================
+
+ ----------------------------------------------------------
+| Total Machines | Failure Rate | High Risk | Avg Power  |
+|      2500      |    3.4%      |     85    |   12.4 kW  |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| Avg Tool Wear | Avg Torque | Avg RPM | Active Alerts  |
+|     108 min   |   41 Nm    | 1450    |      27        |
+ ----------------------------------------------------------
+
+Purpose:
+- Quick operational overview
+- Instant plant health visibility
+- Used by maintenance managers
+
+============================================================
+LEFT SECTION (Failure & Risk Analysis)
+============================================================
+
+ ----------------------------------------------------------
+| FAILURE DISTRIBUTION (Donut/Pie Chart)                  |
+|                                                         |
+| - Failure vs Healthy Machines                           |
+| - % of risky machines                                   |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| FAILURE BY RISK CATEGORY (Bar Chart)                    |
+|                                                         |
+| Low Risk                                                |
+| Medium Risk                                             |
+| High Risk                                               |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| FAILURE BY PRODUCT TYPE                                 |
+|                                                         |
+| Type L                                                  |
+| Type M                                                  |
+| Type H                                                  |
+ ----------------------------------------------------------
+
+Purpose:
+- Understand failure concentration
+- Identify risky operational groups
+
+============================================================
+CENTER SECTION (Operational Monitoring)
+============================================================
+
+ ----------------------------------------------------------
+| TORQUE vs ROTATIONAL SPEED (Scatter Plot)               |
+|                                                         |
+| X-axis: RPM                                             |
+| Y-axis: Torque                                          |
+| Color: Failure Probability                              |
+ ----------------------------------------------------------
+
+Purpose:
+- Detect dangerous operating zones
+- High torque + low RPM = failure region
+
+ ----------------------------------------------------------
+| TOOL WEAR DISTRIBUTION (Histogram)                      |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| ESTIMATED POWER DISTRIBUTION                            |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| TEMPERATURE DIFFERENCE ANALYSIS                         |
+ ----------------------------------------------------------
+
+Purpose:
+- Monitor operational stress
+- Detect overload and thermal imbalance
+
+============================================================
+RIGHT SECTION (AI Risk Monitoring)
+============================================================
+
+ ----------------------------------------------------------
+| HIGH RISK MACHINES TABLE                                |
+|                                                         |
+| Machine ID | Failure Probability | Risk Category        |
+|                                                         |
+ ----------------------------------------------------------
+
+Purpose:
+- Immediate maintenance prioritization
+
+ ----------------------------------------------------------
+| FAILURE PROBABILITY GAUGE                               |
+|                                                         |
+| Green -> Yellow -> Red                                  |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| MAINTENANCE ALERT PANEL                                 |
+|                                                         |
+| Critical Machines: 12                                   |
+| Thermal Risk Alerts: 7                                  |
+| Mechanical Stress Alerts: 9                             |
+ ----------------------------------------------------------
+
+Purpose:
+- Simulate real industrial monitoring system
+
+============================================================
+BOTTOM SECTION (Trend Monitoring)
+============================================================
+
+ ----------------------------------------------------------
+| FAILURE PROBABILITY TREND (Line Chart)                  |
+ ----------------------------------------------------------
+
+ ----------------------------------------------------------
+| SENSOR TREND ANALYSIS                                   |
+|                                                         |
+| RPM Trend                                               |
+| Torque Trend                                            |
+| Temperature Trend                                       |
+ ----------------------------------------------------------
+
+Purpose:
+- Observe operational patterns over time
+- Support preventive maintenance planning
+
+============================================================
+FILTER PANEL (LEFT OR TOP)
+============================================================
+
+Recommended Filters:
+- Product Type
+- Risk Category
+- Failure Status
+- Torque Range
+- RPM Range
+- Tool Wear Range
+
+Purpose:
+- Interactive operational analysis
+
+============================================================
+DASHBOARD STORYTELLING GOAL
+============================================================
+
+The dashboard should simulate:
+- AI-assisted industrial monitoring system
+- Predictive maintenance control room
+- Operational risk management console
+
+The focus should remain on:
+- maintenance decisions
+- machine health
+- operational reliability
+- failure prevention
+
+NOT on:
+- ML model internals
+- technical sklearn details
+- excessive experimentation visuals
+
+============================================================
+DESIGN PRINCIPLES
+============================================================
+
+DO:
+- Keep visuals clean
+- Maintain industrial feel
+- Use operational terminology
+- Highlight actionable insights
+- Use consistent color coding
+
+DO NOT:
+- Overcrowd dashboard
+- Add unnecessary charts
+- Focus heavily on ML jargon
+- Use bright random colors
+
+============================================================
+FINAL OBJECTIVE
+============================================================
+
+A stakeholder viewing the dashboard should immediately feel:
+
+"This system can help monitor machine health and reduce
+unexpected industrial equipment failures."

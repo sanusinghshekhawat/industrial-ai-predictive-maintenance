@@ -14,8 +14,26 @@ The workflow combines:
 - imbalance-aware evaluation
 - threshold optimization
 - explainable machine learning
+- interactive AI-powered monitoring application development
 
 to simulate predictive maintenance workflows commonly used in Industry 4.0 and smart manufacturing environments.
+
+---
+
+
+## Interactive Monitoring Application
+
+An interactive Streamlit application was developed to simulate an AI-assisted industrial monitoring system for predictive maintenance.
+
+The application enables:
+- real-time machine risk prediction
+- operational health monitoring
+- failure probability estimation
+- maintenance recommendation generation
+- interactive sensor input simulation
+
+The system transforms machine learning outputs into actionable operational insights for maintenance and reliability teams.
+
 
 ---
 
@@ -180,6 +198,7 @@ The dominance of engineered features validated the effectiveness of domain-infor
 - Scikit-learn
 - SHAP
 - Jupyter Notebook
+- Streamlit
 
 ---
 
@@ -195,7 +214,7 @@ industrial-ai-predictive-maintenance/
 ├── reports/
 ├── screenshots/
 ├── app/
-│
+│   └── streamlit_app.py
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -214,7 +233,40 @@ industrial-ai-predictive-maintenance/
 7. Threshold Optimization  
 8. Hyperparameter Tuning  
 9. Explainable AI & Interpretability  
-10. Production Configuration Selection  
+10. Production Configuration Selection
+11. Streamlit Application Development
+12. Interactive Risk Monitoring
+
+---
+
+## Explainable AI
+## Streamlit Application Features
+
+The project includes an interactive Streamlit-based industrial monitoring application.
+
+### Key Features
+- Real-time equipment failure prediction
+- Dynamic operational risk monitoring
+- Interactive machine parameter inputs
+- Automated feature engineering
+- Maintenance recommendation system
+- Failure probability visualization
+- Operational condition monitoring
+
+### Operational Inputs
+The application accepts:
+- Product Type
+- Air Temperature
+- Process Temperature
+- Rotational Speed
+- Torque
+- Tool Wear
+
+### Generated Operational Indicators
+- Temperature Difference
+- Estimated Mechanical Power
+- Failure Probability
+- Risk Classification
 
 ---
 
@@ -224,11 +276,19 @@ Planned extensions include:
 - XGBoost implementation
 - LightGBM experimentation
 - Predictive maintenance dashboard
-- Streamlit deployment
+- Cloud deployment of Streamlit application
 - Maintenance recommendation engine
 - Real-time monitoring simulation
 - Remaining Useful Life (RUL) estimation
 - IoT sensor integration
+
+---
+
+## Application Preview
+
+### Industrial AI Monitoring Interface
+
+![Streamlit Dashboard](screenshots/streamlit_dashboard_high_risk.png)
 
 ---
 
